@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Тихая голова — вечерний ритуал на 15 минут</title>
+<meta name="description" content="Для тех, кто ложится уставшей, а голова всё равно прокручивает мысли. Протокол на 15 минут вечером, без таблеток и часовых медитаций.">
+<meta name="theme-color" content="#0f0e33">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Тихая голова — вечерний ритуал на 15 минут">
+<meta property="og:description" content="Для тех, кто ложится уставшей, а голова всё равно прокручивает мысли. Протокол на 15 минут вечером, без таблеток и часовых медитаций.">
+<meta property="og:image" content="https://kieslowskid-spec.github.io/tihaya-golova/assets/og.png">
+<meta property="og:url" content="https://kieslowskid-spec.github.io/tihaya-golova/">
+<link rel="canonical" href="https://kieslowskid-spec.github.io/tihaya-golova/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="robots" content="noindex">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#17154f; --deep:#0f0e33; --hill1:#2a2683; --hill2:#1d1a62;
+  --lav:#d9c4ff; --lav2:#c6a8ff; --lav3:#e3d3ff; --ink:#fff; --soft:#e4defc; --muted:#c9c0ee; --faint:#b9b0e6;
+  --card:rgba(255,255,255,.07); --line:rgba(255,255,255,.16);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(1.5px 1.5px at 12% 18%,rgba(255,255,255,.8),transparent),radial-gradient(1px 1px at 34% 62%,rgba(255,255,255,.6),transparent),radial-gradient(2px 2px at 58% 12%,rgba(255,255,255,.9),transparent),radial-gradient(1px 1px at 76% 44%,rgba(255,255,255,.5),transparent),radial-gradient(1.5px 1.5px at 88% 78%,rgba(255,255,255,.7),transparent),radial-gradient(1px 1px at 22% 90%,rgba(255,255,255,.5),transparent);background-size:420px 420px;color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
+a{color:var(--lav)}a:hover{color:#fff}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--lav);outline-offset:3px;border-radius:8px}
+img{display:block;max-width:100%}
+p{margin:0}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.section{padding:88px 0 0}
+.label{margin-top:0;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lav2);margin-bottom:18px}
+.h2{font-family:var(--serif);font-weight:500;font-size:44px;line-height:1;margin:0;text-wrap:balance}
+.h2 em,.it{font-style:italic;color:var(--lav)}
+.h2 .line{display:block}
+.lead{margin-top:22px;font-size:18px;line-height:1.6;color:var(--soft);text-wrap:pretty}
+.stack{display:flex;flex-direction:column;gap:12px}
+.card{padding:22px 22px;border-radius:24px;background:var(--card);border:1px solid var(--line)}
+.card.accent{background:rgba(198,168,255,.12);border:1.5px solid var(--lav2);box-shadow:0 0 34px rgba(198,168,255,.28)}
+.btn{display:block;text-align:center;font-family:var(--sans);font-size:18px;font-weight:700;color:#1b1450;text-decoration:none;padding:20px 28px;border-radius:999px;background:linear-gradient(90deg,#d9b8ff,#b49cff);box-shadow:0 0 34px rgba(200,170,255,.5);transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{color:#1b1450;transform:translateY(-1px);box-shadow:0 0 44px rgba(200,170,255,.7)}
+.btn:active{transform:translateY(1px)}
+.small{font-size:14px;line-height:1.5;color:var(--muted)}
+.star{flex:none;width:14px;height:14px;background:var(--lav);clip-path:polygon(50% 0%,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0% 50%,42% 42%)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#0f0e33 0%,#211d6b 62%,#3a35a8 100%);padding:40px 0 150px}
+.hero::before{content:"";position:absolute;inset:0;background-image:inherit;background-image:radial-gradient(2px 2px at 14% 16%,#fff,transparent),radial-gradient(1.5px 1.5px at 72% 30%,rgba(255,255,255,.7),transparent),radial-gradient(1px 1px at 40% 50%,#fff,transparent),radial-gradient(1.5px 1.5px at 90% 60%,rgba(255,255,255,.7),transparent);background-size:360px 360px;pointer-events:none}
+.hero .glow{position:absolute;right:-70px;top:-80px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(217,196,255,.4) 0%,rgba(217,196,255,.1) 35%,transparent 70%);pointer-events:none}
+.hero .bigstar{position:absolute;right:20px;top:2px;width:60px;height:60px;margin:0;background:#f6efff;clip-path:polygon(50% 0%,56% 44%,100% 50%,56% 56%,50% 100%,44% 56%,0% 50%,44% 44%);pointer-events:none}
+.hero .wrap{position:relative}
+.kicker{max-width:min(300px,calc(100% - 90px));font-size:14px;line-height:1.45;font-weight:600;color:var(--lav2)}
+.brand{margin:72px 0 0;font-family:var(--serif);font-weight:500;font-size:68px;line-height:.92;letter-spacing:-.01em}
+.descr{margin-top:10px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:28px;line-height:1.15;color:var(--lav)}
+.hero h1{margin:40px 0 0;padding-top:28px;border-top:1px solid rgba(255,255,255,.2);font-family:var(--serif);font-weight:500;font-size:32px;line-height:1.08;text-wrap:balance}
+.hero h1 .line{display:block}
+.hero h1 .line+.line{margin-top:10px;font-style:italic;color:var(--lav)}
+.hero .lead{margin-top:20px}
+.cta{margin-top:32px;display:flex;flex-direction:column;gap:12px}
+.cta .small{text-align:center}
+.hills{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none}
+.hills i{position:absolute;border-radius:50%}
+.hills .h1{left:30%;bottom:-160px;width:120%;height:300px;background:var(--hill1)}
+.hills .h2x{left:-40%;bottom:-190px;width:120%;height:290px;background:var(--hill2)}
+.hills .h3{left:20%;bottom:-220px;width:120%;height:290px;background:var(--bg)}
+
+/* block 2 */
+.chips{margin-top:28px}
+.chip{font-weight:600;line-height:1.4}
+.whatif{font-family:var(--serif);font-style:italic;font-weight:600;font-size:26px;line-height:1;color:var(--lav3)}
+.prose{margin-top:28px;display:flex;flex-direction:column;gap:14px;color:var(--soft);text-wrap:pretty}
+
+/* block 3 */
+.quote{margin-top:22px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:34px;line-height:1.08;color:#efe6ff;text-wrap:balance;padding:26px 24px}
+.step{display:flex;gap:18px;align-items:flex-start}
+.step .n{flex:none;width:44px;font-family:var(--serif);font-style:italic;font-weight:600;font-size:40px;line-height:.85;color:var(--lav)}
+.step h3{margin:0 0 6px;font-family:var(--serif);font-weight:600;font-size:28px;line-height:1.05}
+.step p{color:#e9e4fb;text-wrap:pretty}
+
+/* block 4 */
+.list{border-radius:24px;background:rgba(255,255,255,.05);border:1px solid var(--line);padding:4px 22px;margin-top:28px}
+.list li{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-top:1px solid rgba(255,255,255,.12)}
+.list li:first-child{border-top:0}
+.list ul{list-style:none;margin:0;padding:0}
+.list .star{margin-top:6px}
+.list .main{font-weight:600;line-height:1.45;text-wrap:pretty}
+.list .note{display:block;margin-top:4px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:21px;line-height:1.3;color:var(--lav);text-wrap:pretty}
+
+/* block 5 previews */
+.previews{margin-top:28px;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px 14px;margin-left:-20px;margin-right:-20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.previews::-webkit-scrollbar{display:none}
+.previews figure{flex:none;width:72%;margin:0;scroll-snap-align:center;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 40px rgba(5,4,30,.5);aspect-ratio:794/1123;background:#121040}
+.previews img{width:100%;height:100%;object-fit:cover}
+.previews-note{margin-top:14px}
+
+/* block 6 */
+.bonus .tag{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lav2)}
+.bonus h3{margin:10px 0 10px;font-family:var(--serif);font-weight:600;font-size:28px;line-height:1.05;text-wrap:balance}
+.bonus p{color:#e9e4fb;text-wrap:pretty}
+
+/* block 7 */
+.check{flex:none;margin-top:1px;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--lav2);display:flex;align-items:center;justify-content:center}
+.check::after{content:"";width:9px;height:5px;margin-top:-3px;border-left:2px solid var(--lav3);border-bottom:2px solid var(--lav3);transform:rotate(-45deg)}
+.list .sub{display:block;margin-top:4px;font-size:16px;font-weight:400;line-height:1.5;color:var(--muted)}
+.price{margin-top:44px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px}
+.price .pre{font-family:var(--serif);font-style:italic;font-weight:500;font-size:34px;color:var(--lav)}
+.price .val{font-family:var(--serif);font-weight:500;font-size:96px;line-height:.85;letter-spacing:-.02em}
+.ladder{margin-top:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:end}
+.ladder div{display:flex;flex-direction:column;justify-content:space-between;padding:14px 12px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--muted)}
+.ladder div:nth-child(1){height:140px;background:rgba(198,168,255,.16);border:1.5px solid var(--lav2);box-shadow:0 0 30px rgba(198,168,255,.3);color:#efe6ff}
+.ladder div:nth-child(2){height:170px}
+.ladder div:nth-child(3){height:200px}
+.ladder span{font-size:14px;font-weight:600;line-height:1.3}
+.ladder b{font-family:var(--serif);font-weight:500;font-size:36px;line-height:.9}
+.ladder div:nth-child(1) b{font-weight:600;color:#fff}
+.why{margin-top:36px}
+.why h3{margin:0 0 12px;font-family:var(--serif);font-weight:600;font-size:30px;line-height:1}
+.why p{color:#e9e4fb;text-wrap:pretty}
+
+/* block 8 */
+.guarantee .gh{margin:0 0 16px;font-family:var(--serif);font-weight:500;font-size:40px;line-height:1;text-wrap:balance}
+.guarantee .gh .line{display:block}
+.guarantee p{color:#efeafd;text-wrap:pretty}
+.stat{margin-top:28px;display:flex;align-items:baseline;gap:14px;font-family:var(--serif);font-weight:500;line-height:.8}
+.stat .num{font-size:150px;letter-spacing:-.02em}
+.stat .unit{font-style:italic;font-size:52px;color:var(--lav)}
+.cite{margin-top:10px;font-size:14px;color:var(--faint)}
+.fact h3{margin:0 0 8px;font-family:var(--serif);font-style:italic;font-weight:600;font-size:28px;line-height:1;color:var(--lav3)}
+.fact p{color:#e9e4fb;text-wrap:pretty}
+.disclaimer{margin-top:24px;font-size:14px;line-height:1.55;color:var(--faint);text-wrap:pretty}
+
+/* block 9 faq */
+.faq{margin-top:28px;border-radius:24px;background:rgba(255,255,255,.05);border:1px solid var(--line);padding:0 22px}
+.faq details{border-top:1px solid rgba(255,255,255,.12)}
+.faq details:first-child{border-top:0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:600;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;position:relative;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--lav2)}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--lav3);transform:translate(-50%,-50%);transition:transform .2s ease}
+.faq summary .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0deg)}
+.faq .a{padding:0 44px 20px 0;color:var(--soft);text-wrap:pretty}
+
+/* final */
+.final{position:relative;overflow:hidden;margin-top:96px;padding:0 0 190px;background:linear-gradient(180deg,var(--bg) 0%,#24207a 55%,#3a35a8 100%)}
+.final .wrap{position:relative}
+.final .h2{font-size:38px;line-height:1.06}
+.final .h2 .line+.line{margin-top:8px}
+.final .hills .h3{background:var(--deep);left:-30%;width:170%}
+.final .note{margin-top:16px;text-align:center;color:var(--soft);text-wrap:balance}
+.goodnight{background:var(--deep);padding:88px 0 150px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.goodnight .star{width:22px;height:22px;filter:drop-shadow(0 0 10px rgba(217,196,255,.8))}
+.goodnight p{font-family:var(--serif);font-style:italic;font-weight:500;font-size:30px;line-height:1;color:var(--lav)}
+footer{background:var(--deep);padding:0 0 calc(28px + env(safe-area-inset-bottom))}
+footer .wrap{display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;color:#8a83ba;text-align:center}
+footer .row{display:flex;justify-content:center;flex-wrap:wrap;gap:2px 16px}
+footer a{color:#8a83ba;text-decoration:underline;text-decoration-color:rgba(138,131,186,.4);text-underline-offset:3px}
+footer a:hover{color:var(--muted)}
+
+/* sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(15,14,51,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,.12);transform:translateY(110%);transition:transform .25s ease}
+.sticky.on{transform:none}
+.sticky .btn{padding:15px 20px;font-size:17px}
+
+@media (min-width:768px){
+  body{font-size:19px}
+  .wrap{padding:0 32px}
+  .section{padding-top:120px}
+  .label{margin-top:0;font-size:14px}
+  .h2{font-size:60px}
+  .lead{font-size:20px}
+  .card{padding:28px 32px;border-radius:28px}
+  .hero{padding:56px 0 190px}
+  .hero .glow{right:-100px;top:-110px;width:340px;height:340px}
+  .hero .bigstar{right:20px;top:0;width:100px;height:100px}
+  .kicker{max-width:420px;font-size:15px}
+  .brand{margin-top:100px;font-size:104px}
+  .descr{font-size:40px}
+  .hero h1{font-size:44px}
+  .cta{flex-direction:column;align-items:flex-start}
+  .cta .btn{min-width:380px}
+  .cta .small{text-align:left}
+  .hills{height:190px}
+  .quote{font-size:44px;padding:34px 36px}
+  .step .n{width:60px;font-size:52px}
+  .step h3,.bonus h3,.fact h3{font-size:32px}
+  .list,.faq{padding-left:32px;padding-right:32px}
+  .list .note{font-size:22px}
+  .previews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;overflow:visible;margin:28px 0 0;padding:0}
+  .previews figure{width:auto}
+  .price .val{font-size:132px}
+  .price .pre{font-size:44px}
+  .ladder{gap:12px}
+  .ladder div{padding:20px;border-radius:22px}
+  .ladder div:nth-child(1){height:170px}.ladder div:nth-child(2){height:205px}.ladder div:nth-child(3){height:240px}
+  .ladder span{font-size:16px}
+  .ladder b{font-size:48px}
+  .guarantee .gh{font-size:56px}
+  .stat .num{font-size:220px}
+  .stat .unit{font-size:72px}
+  .final .h2{font-size:52px}
+  .goodnight{padding:120px 0 200px}
+  .goodnight p{font-size:38px}
+  .sticky{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="bigstar" aria-hidden="true"></div>
+    <p class="kicker">Для тех, кто ложится уставшей, а голова всё равно прокручивает мысли</p>
+    <p class="brand">Тихая голова</p>
+    <p class="descr">вечерний ритуал на 15 минут</p>
+    <h1><span class="line">Как три сигнала мозгу помогают выключить поток мыслей перед сном.</span><span class="line">15 минут вечером, без таблеток и часовых медитаций</span></h1>
+    <p class="lead">Даже если ты уже убирала телефон, считала овец и слушала медитации, а голова всё равно не затихает</p>
+    <div class="cta" id="hero-cta">
+      <a class="btn" href="https://example.com">Забрать протокол за 490₽</a>
+      <p class="small">Файлы на почту сразу после оплаты · Гарантия возврата 60 дней</p>
+    </div>
+  </div>
+  <div class="hills" aria-hidden="true"><i class="h1"></i><i class="h2x"></i><i class="h3"></i></div>
+</header>
+
+<main>
+<section class="section wrap" aria-labelledby="s2">
+  <p class="label">Знакомо?</p>
+  <h2 class="h2" id="s2"><span class="line">Ты так устала, что еле дошла до кровати.</span><span class="line it">Закрываешь глаза, и голова включает свой сериал.</span></h2>
+  <div class="stack chips">
+    <div class="card chip">Рабочая переписка.</div>
+    <div class="card chip">Список дел на завтра.</div>
+    <div class="card chip">Фраза, которую ты сказала три дня назад и до сих пор прокручиваешь.</div>
+    <div class="card accent">Потом приходит <span class="whatif">«а что, если…»</span>, и мозг уже проигрывает худший сценарий.</div>
+  </div>
+  <div class="prose">
+    <p>Смотришь на часы: уже два ночи, а голова работает.</p>
+    <p>И постепенно начинаешь заранее бояться момента, когда ляжешь спать.</p>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="s3">
+  <p class="label">С тобой всё в порядке</p>
+  <h2 class="h2" id="s3"><span class="line">Сила воли</span><span class="line it">тут ни при чём.</span></h2>
+  <div class="prose">
+    <p>Тело к ночи устаёт и готово спать. А мозг весь день решал задачи и по щелчку не остановится. Недодуманную мысль он считает открытой задачей и возвращается к ней, пока её не закроют.</p>
+    <p>Команда «просто расслабься» задачу не закрывает. Мозгу нужен понятный сигнал:</p>
+  </div>
+  <p class="card accent quote">«с этим разобрались, можно отпустить».</p>
+  <p class="lead" style="margin-top:36px">Ритуал даёт три таких сигнала, по 5 минут на каждый:</p>
+  <ol class="stack" style="list-style:none;margin:20px 0 0;padding:0">
+    <li class="card step"><span class="n" aria-hidden="true">01</span><div><h3>Выгрузи мысли.</h3><p>Всё, что крутится в голове, переносишь на бумагу. Решать ничего не надо.</p></div></li>
+    <li class="card step"><span class="n" aria-hidden="true">02</span><div><h3>Замедли дыхание.</h3><p>Длинный выдох помогает телу перейти из напряжения в режим отдыха.</p></div></li>
+    <li class="card step"><span class="n" aria-hidden="true">03</span><div><h3>Займи мозг картинками.</h3><p>Простая техника с образами, за которой тревоге трудно разогнаться.</p></div></li>
+  </ol>
+</section>
+
+<section class="section wrap" aria-labelledby="s4">
+  <h2 class="label" id="s4">Что внутри</h2>
+  <div class="list" style="margin-top:0">
+    <ul>
+      <li><span class="star" aria-hidden="true"></span><p class="main">Тест «Какие у тебя вечерние мысли» — 2 минуты, и понятно, с какой техники начинать тебе <span class="note">(типов мыслей три, и у каждого своя точка входа)</span></p></li>
+      <li><span class="star" aria-hidden="true"></span><p class="main">Ритуал на 15 минут по шагам — открыла и делаешь по порядку <span class="note">(думать, что делать дальше, не нужно)</span></p></li>
+      <li><span class="star" aria-hidden="true"></span><p class="main">Как выгружать мысли, чтобы мозг перестал держать их «в фоне» <span class="note">(и готовые начала фраз, если не знаешь, с чего начать)</span></p></li>
+      <li><span class="star" aria-hidden="true"></span><p class="main">Чем заменить счёт овец <span class="note">(почему овцы помогают не всем и что работает вместо них)</span></p></li>
+      <li><span class="star" aria-hidden="true"></span><p class="main">«Окно тревоги» — для тех, кого накрывает «а что, если…» <span class="note">(разбираешь тревоги за 2–3 часа до сна, а не в кровати)</span></p></li>
+      <li><span class="star" aria-hidden="true"></span><p class="main">Версия на 5 минут — для вечеров, когда совсем нет сил</p></li>
+      <li><span class="star" aria-hidden="true"></span><p class="main">План «прошло 15 минут, а сна нет» <span class="note">(первое правило: не смотреть на часы)</span></p></li>
+      <li><span class="star" aria-hidden="true"></span><p class="main">Трекер на 7 вечеров — через неделю видно, что помогает именно тебе</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="s5">
+  <h2 class="h2" id="s5">Как это <em>выглядит</em></h2>
+  <div class="previews">
+    <figure><img src="assets/page-01.png" alt="Обложка протокола «Тихая голова»" width="794" height="1123" loading="lazy"></figure>
+    <figure><img src="assets/page-04.png" alt="Страница 4: тест «Какие у тебя вечерние мысли»" width="794" height="1123" loading="lazy"></figure>
+    <figure><img src="assets/page-11.png" alt="Страница 11: вечерний протокол на 15 минут" width="794" height="1123" loading="lazy"></figure>
+    <figure><img src="assets/page-12.png" alt="Страница 12: трекер на 7 вечеров" width="794" height="1123" loading="lazy"></figure>
+  </div>
+  <p class="small previews-note">13 страниц, читается с телефона, можно распечатать.</p>
+</section>
+
+<section class="section wrap" aria-labelledby="s6">
+  <p class="label">В подарок</p>
+  <h2 class="h2" id="s6"><span class="line">Три отдельных файла</span><span class="line it">к протоколу</span></h2>
+  <div class="stack" style="margin-top:28px">
+    <article class="card bonus"><p class="tag">Бонус 1</p><h3>«5 фраз себе, если мысли не отпускают»</h3><p>Для момента, когда ты уже в кровати, а мысль снова вернулась. Короткие фразы-якоря, удобно сохранить в заметки телефона.</p></article>
+    <article class="card bonus"><p class="tag">Бонус 2</p><h3>«Проснулась в 3–4 утра? Вот что делать»</h3><p>Уснуть вечером — только половина дела. Что делать ночью, чтобы не включить «режим решения задач» и снова уснуть.</p></article>
+    <article class="card bonus"><p class="tag">Бонус 3</p><h3>«Почему не помогают стандартные советы»</h3><p>Овцы, медитации с YouTube и «просто расслабься»: почему они срабатывают не у всех и что делать вместо них.</p></article>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="s7">
+  <h2 class="label" id="s7">Всё вместе</h2>
+  <div class="list" style="margin-top:0">
+    <ul>
+      <li><span class="check" aria-hidden="true"></span><p class="main">Протокол «Тихая голова» <span class="sub">13 страниц: тест, 5 техник, ритуал на 15 минут, план «если не сработало», трекер на 7 вечеров</span></p></li>
+      <li><span class="check" aria-hidden="true"></span><p class="main">Бонус 1. «5 фраз себе, если мысли не отпускают»</p></li>
+      <li><span class="check" aria-hidden="true"></span><p class="main">Бонус 2. «Проснулась в 3–4 утра? Вот что делать»</p></li>
+      <li><span class="check" aria-hidden="true"></span><p class="main">Бонус 3. «Почему не помогают стандартные советы»</p></li>
+    </ul>
+  </div>
+  <div class="price"><span class="pre">Всё вместе —</span><span class="val">490₽</span></div>
+  <p class="lead" style="margin-top:36px">Цена растёт по мере продаж:</p>
+  <div class="ladder">
+    <div><span>первые 30 покупателей</span><b>490₽</b></div>
+    <div><span>следующие 30</span><b>690₽</b></div>
+    <div><span>дальше</span><b>990₽</b></div>
+  </div>
+  <div class="cta">
+    <a class="btn" href="https://example.com">Забрать протокол за 490₽</a>
+  </div>
+  <div class="card why">
+    <h3>Почему так <span class="it">недорого</span></h3>
+    <p>490₽ за протокол и три бонуса? Наверняка хочется спросить, где подвох. Подвоха нет. Продукт новый, и сейчас мне важнее честные отзывы, чем прибыль. Ты получаешь протокол по самой низкой цене, я получаю обратную связь, с которой сделаю его лучше.</p>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="s8">
+  <p class="label">Гарантия</p>
+  <div class="card accent guarantee">
+    <h2 class="gh" id="s8"><span class="line">60 дней на возврат.</span><span class="line it">По любой причине.</span></h2>
+    <p>Попробовала, и не подошло? Просто передумала? Напиши на [контакт], и я верну деньги. Без вопросов и объяснений. Техники проверяются за пару вечеров. Если они тебе не помогли, держать у себя твои деньги я не хочу.</p>
+  </div>
+
+  <p class="label" style="margin-top:88px">На чём это основано</p>
+  <h2 class="h2"><span class="line">Техники не придуманы</span><span class="line it">с потолка</span></h2>
+  <div class="stat"><span class="num">9</span><span class="unit">минут</span></div>
+  <p class="lead">На столько быстрее в среднем засыпали люди, которые 5 минут перед сном выписывали незаконченные дела, чем те, кто писал о сделанном. Засыпание замеряли приборами в лаборатории сна.</p>
+  <p class="cite">Scullin et al., Journal of Experimental Psychology: General, 2018</p>
+  <div class="stack" style="margin-top:28px">
+    <div class="card fact"><h3>Эффект Зейгарник</h3><p>Незавершённое дело держится в памяти сильнее сделанного и чаще всплывает само. Поэтому голова и не отпускает именно недоделанное.</p></div>
+    <div class="card fact"><h3>Длинный выдох</h3><p>Помогает включить ту часть нервной системы, которая отвечает за отдых.</p></div>
+  </div>
+  <p class="disclaimer">Честно: протокол — про вечерние привычки, а не лечение. Если бессонница длится месяцами, бывают панические атаки или долгое подавленное состояние, лучше начать с врача-сомнолога или психотерапевта.</p>
+</section>
+
+<section class="section wrap" aria-labelledby="s9">
+  <h2 class="label" id="s9">Коротко о главном</h2>
+  <div class="faq" style="margin-top:0">
+    <details><summary>В каком формате?<span class="pm" aria-hidden="true"></span></summary><p class="a">Четыре PDF-файла: протокол на 13 страниц и три бонуса. Читается с телефона, можно распечатать.</p></details>
+    <details><summary>Как я получу файлы?<span class="pm" aria-hidden="true"></span></summary><p class="a">Сразу после оплаты на почту, которую укажешь при покупке. Если письма нет, проверь «Спам» или напиши на [контакт].</p></details>
+    <details><summary>Сколько времени нужно?<span class="pm" aria-hidden="true"></span></summary><p class="a">Прочитать — около 20 минут. Сам ритуал — 15 минут вечером.</p></details>
+    <details><summary>Сработает с первого раза?<span class="pm" aria-hidden="true"></span></summary><p class="a">У кого-то да, кому-то понадобится несколько вечеров, чтобы привыкнуть к последовательности. Поэтому есть гарантия 60 дней.</p></details>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="s10">
+  <div class="wrap">
+    <h2 class="h2" id="s10"><span class="line">Сегодня вечером ты снова ляжешь в кровать.</span><span class="line it">Можно опять ждать, что «само пройдёт».</span></h2>
+    <p class="lead">А можно попробовать ритуал, в котором всё расписано по шагам.</p>
+    <div class="cta" id="final-cta" style="align-items:stretch">
+      <a class="btn" href="https://example.com" style="font-size:20px;padding:22px 28px">Забрать протокол за 490₽</a>
+    </div>
+    <p class="note">Файлы придут на почту сразу после оплаты. Первый ритуал можно сделать уже сегодня.</p>
+  </div>
+  <div class="hills" aria-hidden="true"><i class="h1"></i><i class="h2x"></i><i class="h3"></i></div>
+</section>
+</main>
+
+<div class="goodnight" aria-hidden="true">
+  <span class="star"></span>
+  <p>Спокойной ночи</p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="row"><span>[ФИО], самозанятый</span><span>ИНН [номер]</span><span>[контакт]</span></div>
+    <div class="row"><a href="#оферта">Публичная оферта</a><a href="#политика">Политика конфиденциальности</a></div>
+    <p>Оплачивая, ты принимаешь условия публичной оферты.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <a class="btn" href="https://example.com" tabindex="-1">Забрать за 490₽</a>
+</div>
+
+<script>
+(function(){
+  var bar=document.getElementById('sticky'),hero=document.getElementById('hero-cta'),fin=document.getElementById('final-cta');
+  if(!('IntersectionObserver' in window))return;
+  var pastHero=false,nearFinal=false;
+  function upd(){var on=pastHero&&!nearFinal;bar.classList.toggle('on',on);bar.setAttribute('aria-hidden',on?'false':'true');bar.querySelector('a').tabIndex=on?0:-1;}
+  new IntersectionObserver(function(e){pastHero=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;upd();}).observe(hero);
+  new IntersectionObserver(function(e){nearFinal=e[0].isIntersecting||e[0].boundingClientRect.top<0;upd();},{rootMargin:'0px 0px 200px 0px'}).observe(fin);
+})();
+</script>
+</body>
+</html>
